@@ -1,0 +1,188 @@
+
+
+main .introduce .introduce-title {
+    position: relative;
+}
+
+main .introduce .introduce-title .title-bg {
+    background-image: url(../image/Rublevoy_Steemit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 180px;
+}
+
+
+main .introduce .introduce-title .title-overlay {
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main .introduce .introduce-title .introduce-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .introduce .introduce-title .introduce-content h2 {
+    font-size: 27.2px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+}
+
+main .introduce .introduce-title .introduce-content .title-content {
+    display: flex;
+    padding: 15px 0;
+    line-height: 25px;
+}
+
+main .introduce .introduce-title .introduce-content .title-content a, 
+main .introduce .introduce-title .introduce-content .title-content h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: .3px;
+}
+
+main .introduce .introduce-title .introduce-content .title-content h3 {
+    font-weight: 700;
+}
+
+
+/* main */
+
+main .introduce .introduce-container .title h2 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.4;
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+.introduce-container {
+    padding-bottom: 70px;
+}
+
+.introduce-container .banner-bg {
+    position: relative;
+    width: 100%;
+    height: 720px;
+}
+
+.introduce-container .banner-bg:hover .bg-loaded {
+    filter: brightness(1.1);
+}
+
+.introduce-container .banner-bg .bg-loaded {
+    background-image: url(../image/flat-device-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    transition: filter .4s ease-in-out;
+}
+
+.introduce-container .banner-bg .is-border {
+    
+}
+
+.introduce-container .banner-bg .effect-sparkle{
+    background-image:url("../image/sparkle1.png"),
+    url("../image/sparkle2.png");
+    animation:sparkle 60s linear infinite;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+}
+    
+@keyframes sparkle{
+    0%{
+        background-position:0px 0px, 0px 0px, 0px 0px
+    }100%{
+        background-position:-500px -1000px, -400px -400px, 300px 
+    }
+}
+
+
+
+
+.introduce-container .criteria {
+    text-align: center;
+}
+
+.introduce-container .criteria img {
+    height: 70px;
+    width: auto;
+    margin-top: 60px;
+    margin-bottom: 16px;
+}
+
+.introduce-container .criteria h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    color: #1c1c1c;
+}
+
+.introduce-container .criteria p {
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 25px;
+    color: #353535;
+    opacity: .8;
+}
+
+
+@media screen and (max-width: 740px){
+
+    main .introduce .introduce-title .introduce-content h2 {
+        font-size: 22.4px;
+    }
+
+    main .introduce .introduce-title .introduce-content {
+        width: 100%;
+    }
+
+    main .introduce .introduce-title .introduce-content .title-content {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    main .introduce .introduce-container .title h2 {
+        font-size: 33.6px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+
+    .introduce-container .container .row {
+        margin: 0;
+    }
+
+    .introduce-container .container .row > div:first-child {
+        margin-top: 0 !important;
+        padding: 0 15px 30px;
+    }
+
+    .introduce-container .container .row > div:last-child {
+        margin-top: 0 !important;
+    }
+}

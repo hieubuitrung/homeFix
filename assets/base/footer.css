@@ -1,0 +1,213 @@
+
+/* footer */
+
+footer {
+    height: 375px;
+    position: relative;
+}
+
+footer .bg-footer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    background-color: #0d0d0d;
+}
+
+footer .container {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 50px;
+}
+
+footer .container .info img {
+    width: 100%;
+}
+
+footer .container .info p {
+    font-size: 14px;
+    letter-spacing: .4px;
+    line-height: 1.8;
+    padding-top: 14px;
+    font-weight: 300;
+    color: #a4a4a4;
+}
+
+
+footer .container .row h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+footer .container .row h2::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 50px;
+    margin: 1em 0;
+    background-color: #e74216;
+    transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+
+footer .container .row h2:hover::after {
+    width: 100%;
+    background-color: #ffc527;
+}
+
+footer .container .row .contact ul li{
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer .container .row .contact ul li i{
+    width: 0;
+    display: block;
+    padding-right: 30px;
+    color: #a4a4a4;
+    transition: all .15s ease-in-out;
+}
+
+footer .container .row .contact ul li p {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #a4a4a4;
+    transition: all .15s ease-in-out;
+}
+
+footer .container .row .contact ul li:hover i,
+footer .container .row .contact ul li:hover p {
+    color: #fff;
+}
+
+footer .container .row .menu ul li {
+    list-style: none;
+}
+
+footer .container .row .menu ul li a {
+    color: #a4a4a4;
+    text-decoration: none;
+    line-height: 1.3;
+    padding-top: 10px;
+    display: block;
+    transition: all .15s ease-in-out;
+}
+
+footer .container .row .menu ul li:hover a {
+    color: #fff;
+}
+
+footer .container .row .menu ul li a::before {
+    content: "\f0da";
+    font-family: FontAwesome;
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 15px 0 5px;
+    color: #a4a4a4;
+    transition: all .15s ease-in-out;
+}
+
+footer .container .row .menu ul li:hover a::before {
+    color: #fff;
+}
+
+footer .container .row .menu ul li.active a::before,
+footer .container .row .menu ul li.active a {
+    color: #ffc527;
+}
+
+footer .container .row .follow p {
+    color: #a4a4a4;
+    line-height: 1.3;
+}
+
+footer .container .row .follow form {
+    position: relative;
+    display: flex;
+}
+
+footer .container .row .follow form input {
+    height: 40px;
+    border-radius: 3px 0 0 3px;
+    border-right: 0;
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #a4a4a4;
+    flex-grow: 1;
+    outline: none; /* bỏ phần viên khi focus vào input */
+}
+
+footer .container .row .follow form label {
+    height: 36px;
+    padding: 0 10px;
+    position: absolute;
+    top: 12px;
+    display: flex;
+    right: 0;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+footer .container .row .follow form label i {
+    color: #ffc527;
+    width: 13px;
+    height: 13px;
+}
+
+footer .container .row .follow ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+footer .container .row .follow ul li {
+    display: inline-block;
+
+}
+
+footer .container .row .follow ul li i {
+    height: 16px;
+    color: #a4a4a4;
+    cursor: pointer;
+    display: block;
+    padding: 0 5px;
+    transition: all .15s ease-in-out;
+}
+
+footer .container .row .follow ul li i:hover {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 740px) {
+
+    /* footer */
+
+    footer {
+        height: 1200px !important;
+    }
+
+    footer .container .contact, 
+    footer .container .menu, 
+    footer .container .follow {
+        padding-top: 70px;
+    }
+
+    footer .container { 
+        padding: 40px 15px;
+    }
+
+}

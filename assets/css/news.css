@@ -1,0 +1,51 @@
+.service .container .title h2 {
+    margin-bottom: 40px;
+    font-size: 18.4px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+.service .container {
+    padding-top: 35px;
+    padding-bottom: 60px;
+}
+
+.service .container .row {
+    max-width: 84%;
+    margin: auto;
+}
+
+.service .container .row img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.service .container .row h3 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: .2px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.service .container .row p {
+    font-size: 14.4px;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: .3px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 740px){
+    .service .container .row {
+        max-width: 100%;
+    }
+
+    .service .container .title h2 {
+        font-size: 16px;
+    }
+}

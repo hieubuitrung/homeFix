@@ -1,0 +1,222 @@
+
+
+main .contact .contact-title {
+    position: relative;
+}
+
+main .contact .contact-title .title-bg {
+    background-image: url(../image/Rublevoy_Steemit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 180px;
+}
+
+
+main .contact .contact-title .title-overlay {
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main .contact .contact-title .contact-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .contact .contact-title .contact-content h2 {
+    font-size: 27.2px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+}
+
+main .contact .contact-title .contact-content .title-content {
+    display: flex;
+    padding: 15px 0;
+    line-height: 25px;
+}
+
+main .contact .contact-title .contact-content .title-content a, 
+main .contact .contact-title .contact-content .title-content h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: .3px;
+}
+
+main .contact .contact-title .contact-content .title-content h3 {
+    font-weight: 700;
+}
+
+.contact .container {
+    padding: 60px 0;
+}
+
+.contact .container .row .info-contact #icon-logo {
+    width: 100%;
+}
+
+.contact .container .row .info-contact .row .info-list > div {
+    display: flex;
+}
+
+.contact .container .row .info-contact .row .info-list > div i {
+    width: 20px;
+    line-height: 1.4;
+}
+
+.contact .container .row .info-contact .row .info-list > div a,
+.contact .container .row .info-contact .row .info-list > div h3 {
+    padding-left: 16px;
+    text-decoration: none;
+    color: #334862;
+    line-height: 1.4;
+    letter-spacing: .3px;
+    opacity: .85;
+}
+
+.contact .container .row .form-contact {
+    padding-top: 25px;
+}
+
+.contact .container .row .form-contact > h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.contact .container .row .form-contact > h1:after {
+    bottom: 0.75rem;
+    content: '\f111\f111\f111';
+    font-family: FontAwesome;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    line-height: 1;
+    color: #76a03f;
+    position: absolute;
+}
+
+.contact .container .row .form-contact .form-control {
+    margin: 10px 0;
+    color: #4e4e4e;
+}
+
+/* tủy chỉnh color của placehoder của input */
+
+.contact .container .row .form-contact .form-control::placeholder {
+    color: #8b8d8b;
+    opacity: 1; /* Firefox */
+}
+
+.contact .container .row .form-contact .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #8b8d8b;
+}
+
+.contact .container .row .form-contact .form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #8b8d8b;
+}
+
+
+/* animation */
+
+main .contact .container .registration-form {
+    animation: appearFromLeft 1.5s ease-in-out forwards;
+}
+
+main .contact .container  .location-map {
+    animation: appearFromRight 1.5s ease-in-out forwards;
+
+}
+
+
+@keyframes appearFromRight {
+    from {
+        transform: translateX(-60px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appearFromLeft {
+    from {
+        transform: translateX(60px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 740px){
+
+    main .contact .contact-title .contact-content h2 {
+        font-size: 22.4px;
+    }
+
+    main .contact .contact-title .contact-content {
+        width: 100%;
+    }
+
+    main .contact .contact-title .contact-content .title-content {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    main .container > .row {
+        margin: 0;
+    }
+
+    main .contact .container .location-map {
+        padding: 0 15px 30px;
+    }
+
+    main .contact .container .location-map .map {
+        margin-bottom: 20px;
+    }
+
+    main .contact .container .registration-form .info-contact .row > div:first-child {
+        text-align: center;
+    }
+
+    .contact .container .row .info-contact #icon-logo {
+        width: 50%;
+    }
+
+    main .contact .container .registration-form .info-contact .row > .info-list {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+    .contact .container .row .form-contact > h1 {
+        font-size: 28.8px;
+        line-height: 1.4;
+    }
+
+    .contact .container .row .form-contact {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
